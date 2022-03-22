@@ -1,0 +1,16 @@
+The library provides the following functions:
+
+to initialize internal library structures
+void init();
+
+to cleanup internal library structures
+void deinit();
+
+clearing all strings in the http header
+void clear_http_headers();
+
+adds a string to the http header
+int_http_header(const char*);
+
+sends an http request and retrieves statistics after it has been executed
+int perform_http_request(struct http_request_result * _http_request_result);
